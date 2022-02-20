@@ -1,0 +1,119 @@
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .contain {
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            place-items: center;
+            position: relative;
+            overflow: hidden;
+            background:rgb(65, 163, 255);
+        }
+
+        img {
+            width:70%;
+            height: 90%;
+            position: absolute;
+            right: 2%;
+
+        }
+
+        .containControl {
+            width: 45vmin;
+            height: 90%;
+            border: 1px solid black;
+            position: absolute;
+            left: 1%;
+            top:5%;
+            display: flex;
+            text-transform: uppercase;
+            flex-direction: column;
+            justify-content: space-around;
+            place-items: center;
+            background:rgb(19, 19, 19);
+            color:rgb(206, 190, 190);
+            border-radius:2vmin;
+            font-size:2vmin;
+        }
+
+        .containControl>input {
+            width: 90%;
+            color:white;
+        }
+        input {
+                -webkit-appearance: none;
+                appearance: none;
+                background: rgb(70, 67, 67);
+                border-radius:1vmin;
+                padding:.4vmin;
+            }
+
+            input::-webkit-slider-thumb {
+                -webkit-appearance: none;
+                /* Override default look */
+                appearance: none;
+                width: 25px;
+                /* Set a specific slider handle width */
+                height: 25px;
+                /* Slider handle height */
+                background: #04AA6D;
+                /* Green background */
+                cursor: pointer;
+                /* Cursor on hover */
+                border-radius:.5vmin;
+
+            }
+            span{
+                font-size:4vmin;
+            }
+        @media only screen and (max-width:1080px) {
+            .contain{
+                overflow:hidden;
+            
+            }
+            .containControl {
+                width: 95%;
+                height: 45%;
+                top: 54%;
+                position: absolute;
+                font-size:3vmin;
+                padding:1vmin;
+                left:2%;
+            }
+
+            img {
+                width: 90%;
+                height: 40%;
+                top: 5%;
+                left: 5%;
+            }
+
+            input {
+                -webkit-appearance: none;
+                appearance: none;
+                background: rgb(70, 67, 67);
+                border-radius:.5vmin;
+                height:5vmin;
+            }
+
+            input::-webkit-slider-thumb {
+                -webkit-appearance: none;
+                /* Override default look */
+                appearance: none;
+                width: 45px;
+                /* Set a specific slider handle width */
+                height: 30px;
+                /* Slider handle height */
+                background: #04AA6D;
+                /* Green background */
+                cursor: pointer;
+                /* Cursor on hover */
+                border-radius:.5vmin;
+
+            }
+        }
